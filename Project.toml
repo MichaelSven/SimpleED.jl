@@ -1,0 +1,7 @@
+name = "SimpleED"
+uuid = "61657f26-ec51-49c9-a154-2ef563e9058f"
+authors = ["michaelSven <michael.sven.ferguson@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
