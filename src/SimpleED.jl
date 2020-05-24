@@ -1,6 +1,6 @@
 module SimpleED
 
-export fermionicOperators, fermionicOperatorsFunc, fermionicHamiltonianBuilder
+export fermionicOperators, fermionicOperatorsFunc, fermionicHamiltonianBuilder, measure
 
 function fermionicOperators(sites)
         
