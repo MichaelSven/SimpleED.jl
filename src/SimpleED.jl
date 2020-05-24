@@ -59,6 +59,25 @@ function fermionicHamiltonianBuilder(e,t,U)
     
 end;
 
+function measure(
+        observable,
+        probabilities,
+        ES
+    )
+    """"""
+    
+    obsTilde = transpose(ES.vectors)*observable*ES.vectors
+    
+    output ::typeof(probabilities[1]*observable[1]*ES.vectors[1]) = 0
+    
+    for (i,P) in enumerate(probabilities)
+        output += P * obsTilde[i,i]
+    end
+    
+    return output
+    
+end;
+
 
 #function spfermionicOperators(sites)
 #        
